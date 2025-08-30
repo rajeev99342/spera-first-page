@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Summer</title>
+    <style>
+        body {
+          margin: 0;
+          font-family: 'Arial Black', sans-serif;
+          background-color: #f8f5e9; /* light cream */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+
+        .card {
+          text-align: center;
+          padding: 30px;
+          border-radius: 20px;
+          width: 350px;
+        }
+
+        .profile {
+          position: relative;
+          width: 220px;
+          height: 220px;
+          margin: 0 auto 20px;
+        }
+
+        .profile img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+          position: relative;
+          z-index: 2;
+        }
+
+        .ellipse {
+          position: absolute;
+          top: 10px;
+          left: -20px;
+          width: 260px;
+          height: 260px;
+          background: #e4b937; /* golden yellow */
+          border-radius: 50%;
+          z-index: 1;
+        }
+
+        h2 {
+          font-size: 14px;
+          font-weight: 600;
+          margin: 5px 0;
+          letter-spacing: 2px;
+        }
+
+        h1 {
+          font-size: 24px;
+          font-weight: 900;
+          margin: 5px 0 15px;
+        }
+
+        .socials {
+          display: flex;
+          justify-content: center;
+          gap: 20px;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
+        .socials a {
+          text-decoration: none;
+          color: black;
+        }
+
+        hr {
+          margin: 15px auto;
+          width: 80%;
+          border: none;
+          border-top: 1px solid black;
+        }
+
+        .btn {
+          display: block;
+          margin: 12px auto;
+          padding: 12px;
+          width: 220px;
+          border: 1px solid black;
+          border-radius: 50px;
+          background: transparent;
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
+
+        .btn:hover {
+          background: black;
+          color: white;
+          transition: 0.3s;
+        }
+
+        .email {
+          margin-top: 15px;
+          font-size: 14px;
+          font-weight: bold;
+          display: none;
+        }
+    </style>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="card">
+    <div class="profile">
+        <div class="ellipse"></div>
+        <img src="https://cdn.cgdream.ai/_next/image?url=https%3A%2F%2Fapi.cgdream.ai%2Frails%2Factive_storage%2Fblobs%2Fredirect%2FeyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMVVkcGc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ%3D%3D--d229b1931ac6d7d82e2c0de8be4274c50a7a6682%2Fc7e5cf75-1662-4526-a42a-f660bd40da42_2.png&w=1080&q=95" alt="Profile">
+    </div>
+    <h2>HI</h2>
+    <h1>I'M Spera-AI</h1>
+
+    <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fas fa-link"></i></a>
+    </div>
+
+    <hr>
+
+    <button class="btn" onclick="showEmail()">CONTACT ME</button>
+    <div class="email" id="email">waralgorithm@spera-ai.com</div>
+</div>
+
+<script>
+    function showEmail() {
+      document.getElementById("email").style.display = "block";
+    }
+</script>
+</body>
+</html>
